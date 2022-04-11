@@ -15,12 +15,13 @@ This module is free software; you can redistribute it and/or modify it under
 the terms of the MIT license. See LICENSE for details.
 ​
 ​
---version 1.1--
+--version 1.1.1--
 ---------------
 
 Changelog v1.1:
 	--Added a global destructor method
-
+Changelog v1.1.1:
+	--Added concat support
 ​
 ]]----------------------------------------------------------------------------------------------------------------------
 
@@ -202,6 +203,11 @@ end
 --metamethod for when 'print(Class)' is called
 function Class:__tostring()
 	return "ClassObject"
+end
+
+--metamethod for when attempted to concat the table
+function Class.__concat(first, second)
+	return first..tostring(second)
 end
 
 -- will execute upon a call of any class that extends this main Class.
