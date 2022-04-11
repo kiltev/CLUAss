@@ -2,7 +2,7 @@
 This Class module is based off of "Classic" (the lua Class library found in luarocks.org)
 It defines a base class from which all classes inherit and provides a similar behavior to Java/C# classes
 
-### version 1.1 ###
+### version 1.1.1 ###
 
 The Class supports the following behaviors/actions:
 	
@@ -22,7 +22,9 @@ the terms of the MIT license. See LICENSE for details.
 Changelog v1.1:
 
 	* Added a global destructor method
-
+Changelog v1.1.1:
+	
+	* Added concat support
 
 ## HOW TO  USE: ##
 
